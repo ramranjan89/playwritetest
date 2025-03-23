@@ -35,7 +35,7 @@ headless: true,
 //to take the screenshot of the test case.
 screenshots: 'on',
 //trace: 'on', this will trace the logs of the test case. consume memoery so will use another method:
-trace: 'retain-on-failure', // in this case only failuer test case will have screenshot and traces.
+trace: 'off', // in this case only failuer test case will have screenshot and traces.
 },
 });
 module.exports= config;

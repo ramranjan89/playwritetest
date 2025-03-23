@@ -72,3 +72,4 @@ test('amazon test covering:', async ({page})=>
       console.log("login test and user correct user login validation Test case passed successfullyy");
 
    });
+   
