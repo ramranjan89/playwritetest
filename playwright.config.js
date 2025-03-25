@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
 import { trace } from 'console';
+import { TIMEOUT } from 'dns';
 
 /**
  * Read environment variables from file.
@@ -14,10 +15,11 @@ import { trace } from 'console';
  * @see https://playwright.dev/docs/test-configuration
  */
 const config= ({
+  timeout: 10000,
   testDir: './tests',
 //tesstdir will which test need to be run as . what test to choose to execute
 // right now by default indicating project levvel test dirctory.
-timeout:15000,
+//timeout:9000,
 // by default timeout in playwrite is 30 second. if we want to increase then 
 //use this command to increase the timeout. or else no need.
 expect:
