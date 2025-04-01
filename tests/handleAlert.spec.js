@@ -55,6 +55,7 @@ test('handel Okay and cancel alert pop up', async ({page})=>
         console.log(myNameCss);
         await expect(myNameCss).toEqual(`Your name is: ${myName}`);
 
-
-
+        //* closing a model that is new alert feature:
+        await page.getByRole('button', {name: 'Modern Alert'}).click();
+        await page.locator('.modal-close').click();
         })
