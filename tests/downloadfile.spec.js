@@ -11,7 +11,7 @@ const savefile= await waitForDownloadEvent;
   await savefile.saveAs('./' + 'mydowwnloades13');// saving on this same projecct we use "./" to denote that file save in root folder.
 })
 
-test.skip('download file in another way', async ({ page })=>
+test('download file in another way', async ({ page })=>
 {
     const mypath= 'C:/playwrite project/downloaded-files'
     await page.goto('https://practice-automation.com/file-download/');

@@ -43,7 +43,7 @@ test('selecting all option', async ({page})=>
     
     })
 
-    test.only('selecting option using keyboard', async ({page})=>
+    test('selecting option using keyboard', async ({page})=>
 
         {
             await page.goto('https://letcode.in/selectable');

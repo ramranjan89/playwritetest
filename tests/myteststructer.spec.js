@@ -43,7 +43,7 @@ test.describe('Automation Testing Practice', async ()=>
         
     })
 
-    test.only('user facing locators', async({page})=>
+    test('user facing locators', async({page})=>
     
     {
         const cssparant= page.locator('.card-content div');
