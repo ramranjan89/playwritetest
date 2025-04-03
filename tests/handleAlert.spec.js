@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 import exp from 'constants';
 
-test.skip('handel all alert tyes', async ({page})=>
+test('handel all alert tyes', async ({page})=>
 {
 await page.goto('https://letcode.in/alert');
 const smapleAlert= page.getByRole('button', {name: 'Simple Alert'});
@@ -34,7 +34,7 @@ test('handel Okay and cancel alert pop up', async ({page})=>
     
     })
 
-    test.only('handle prompt alert', async ({page})=>
+    test('handle prompt alert', async ({page})=>
         {
             const myName= "Ram Ranjan Ojha";
         await page.goto('https://letcode.in/alert');

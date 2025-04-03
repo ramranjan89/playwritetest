@@ -43,7 +43,7 @@ test('drag and drop using mouse operation', async ({ page })=>
         await page.waitForTimeout(3000);
     })
 
-    test.only('multiple file upload', async ({ page })=>
+    test('multiple file upload', async ({ page })=>
     
     {
         await page.goto('https://testautomationpractice.blogspot.com/');

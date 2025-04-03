@@ -13,7 +13,7 @@ await page.keyboard.press('Enter');
 await page.waitForTimeout(5000);
 })
 
-test.only('redbus autosuggestion', async ({ page })=>
+test('redbus autosuggestion', async ({ page })=>
 {
     await page.goto('https://www.redbus.in/');
     await page.locator('.sc-ifAKCX').first().focus();

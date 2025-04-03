@@ -13,7 +13,7 @@ test('mouse over action and cases', async ({page})=>
     await page.waitForTimeout(4000);
 })
 
-test.only('mouse over another ex:', async ({ page })=>
+test('mouse over another ex:', async ({ page })=>
 {
 
     await page.goto('https://practice-automation.com/hover/');
