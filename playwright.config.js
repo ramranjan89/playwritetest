@@ -28,6 +28,12 @@ expect:
 },
 reporter: 'html',
 //reporter is used to generate the report in the html format.
+fullyParallel: true, // Run all tests in parallel
+   // Retries failed tests (useful for flaky tests)
+  // Limit parallel workers in CI/CD
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 1 : 0, 
+  workers: process.env.CI ? 2 : undefined,
 use:
 {
 //this use is a object we will decalre browser.
