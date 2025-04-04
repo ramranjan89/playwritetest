@@ -54,11 +54,6 @@ test.describe('Automation Testing Practice', async ()=>
         //await page.locator('.card-content').locator('div').locator(':text-is("Clear the text")')
         //.getByRole('textbox', {name: 'Clear the text'}).fill("ram ranjan ojha");
         //await page.getByRole('textbox', {name: 'Clear the text'}).fill("ram ranjan ojha");
-
-        
-
-        
     })
-
 
 });
