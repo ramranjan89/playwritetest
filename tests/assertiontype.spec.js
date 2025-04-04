@@ -18,7 +18,7 @@ console.log(imgtxt);
 
     });
 
-    test.only('assertion type 2:', async ({page})=>
+    test('assertion type 2:', async ({page})=>
     {
    await page.goto('https://demo.automationtesting.in/Register.html');
    //* Assertion to validate radio button is checked or not.
