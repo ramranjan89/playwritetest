@@ -26,7 +26,7 @@ test('Mouse Operation', async ({page})=>
         }
     })
 
-    test.only('right click operation', async ({page})=>
+    test('right click operation', async ({page})=>
     {
         await page.goto('https://ultimateqa.com/');
 

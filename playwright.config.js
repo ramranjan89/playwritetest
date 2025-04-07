@@ -26,7 +26,11 @@ expect:
 {
   timeout: 3000, // assertion time out that we declare
 },
-reporter: [['html', { open: 'never' }], ['list'], ['json']], //!reporter is used to generate the report in the html format list and json are used to generate the report in the list and json format.],
+reporter: [
+  ['html', { open: 'never' }],
+  ['junit', { outputFile: 'test-results/results.xml' }], // this will generate the junit report in the test-results folder.
+],
+//reporter: [['html', { open: 'never' }], ['list'], ['json']], //!reporter is used to generate the report in the html format list and json are used to generate the report in the list and json format.],
 //reporter is used to generate the report in the html format.
 fullyParallel: true, // Run all tests in parallel
    // Retries failed tests (useful for flaky tests)
