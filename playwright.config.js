@@ -16,7 +16,7 @@ import { TIMEOUT } from 'dns';
  */
 const config= ({
   //timeout: 10000,
-  testDir: './tests',
+  testDir: './tests-examples', 
 //tesstdir will which test need to be run as . what test to choose to execute
 // right now by default indicating project levvel test dirctory.
 //timeout:9000, //! this is the default timeout for the test case.
@@ -56,18 +56,18 @@ projects: [
     name: 'chromium',
     use: { ...devices['Desktop Chrome'] },
   },
-  {
-    name: 'firefox',
-    use: { ...devices['Desktop Firefox'] },
-  },
-  {
-    name: 'brave',
-    use: { ...devices['Desktop Chrome'] }, // Playwright doesn't have a separate 'Brave' device
-  },
-  {
-    name: 'mobile chrome',
-    use: { ...devices['Pixel 5'] },
-  },
+  // {
+  //   name: 'firefox',
+  //   use: { ...devices['Desktop Firefox'] },
+  // },
+  // {
+  //   name: 'brave',
+  //   use: { ...devices['Desktop Chrome'] }, // Playwright doesn't have a separate 'Brave' device
+  // },
+  // {
+  //   name: 'mobile chrome',
+  //   use: { ...devices['Pixel 5'] },
+  // },
 ]
 });
 module.exports= config;
