@@ -18,7 +18,6 @@ test('Alert Handling @smoke', async ({ page }) =>
           console.error('⚠️ Failed response detected!');
         }
       });
-      
          await page.goto('https://practice-automation.com/popups/');
             await page.getByRole('button', { name: 'Alert Popup', exact:true }).click(); //! this will click on the button and open the alert.
             await page.waitForTimeout(4000); //! this will wait for 4 seconds.

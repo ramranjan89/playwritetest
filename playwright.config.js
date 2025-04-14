@@ -32,7 +32,7 @@ reporter: [
 ],
 //reporter: [['html', { open: 'never' }], ['list'], ['json']], //!reporter is used to generate the report in the html format list and json are used to generate the report in the list and json format.],
 //reporter is used to generate the report in the html format.
-fullyParallel: true, // Run all tests in parallel
+fullyParallel: false, // Run all tests in parallel
    // Retries failed tests (useful for flaky tests)
   // Limit parallel workers in CI/CD
   forbidOnly: !!process.env.CI, //!this is used to fail the test case(only tag) if it is not run in CI/CD.
