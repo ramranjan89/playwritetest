@@ -16,7 +16,7 @@ import { TIMEOUT } from 'dns';
  */
 const config= ({
   //timeout: 10000,
-  testDir: './tests-examples', 
+  testDir: './tests', 
 //tesstdir will which test need to be run as . what test to choose to execute
 // right now by default indicating project levvel test dirctory.
 //timeout:9000, //! this is the default timeout for the test case.
